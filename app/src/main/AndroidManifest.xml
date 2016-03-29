@@ -19,10 +19,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DisplayMessageActivity"
-            android:label="@string/title_activity_display_message"
+            android:name=".StartExercisesActivity"
+            android:label="@string/title_activity_start_exercises"
             android:parentActivityName=".MyActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bme301.abdominalbreathing.MyActivity" />
+        </activity>
+        <activity
+            android:name=".OpenArchivesActivity"
+            android:label="@string/title_activity_open_archives"
+            android:parentActivityName=".MyActivity"
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bme301.abdominalbreathing.MyActivity" />

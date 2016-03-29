@@ -12,8 +12,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 
 public class MyActivity extends AppCompatActivity {
-    public final static String EXTRA_MESSAGE = "com.bme301.abdominalbreathing.MESSAGE";
-
+    public final static String EXTRA_MESSAGE = "com.bme301.abomdinalbreathing.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,13 +52,20 @@ public class MyActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-//    public void sendMessage(View view) {
-//        //Button press
-//        Intent intent = new Intent(this, DisplayMessageActivity.class);
-//        EditText editText = (EditText) findViewById(R.id.edit_message);
-//        String message = editText.getText().toString();
-//        intent.putExtra(EXTRA_MESSAGE, message);
-//        startActivity(intent);
-//    }
+
+    public void openArchives(View view) {
+        Intent intent = new Intent(this, OpenArchivesActivity.class);
+        String message = getString(R.string.under_construction);
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+
+    }
+
+    public void startExercises(View view) {
+        Intent intent = new Intent(this, StartExercisesActivity.class);
+        String message = getString(R.string.under_construction);
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
 
 }

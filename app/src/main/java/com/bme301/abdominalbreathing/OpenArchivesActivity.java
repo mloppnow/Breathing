@@ -10,12 +10,12 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class DisplayMessageActivity extends AppCompatActivity {
+public class OpenArchivesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_message);
+        setContentView(R.layout.activity_open_archives);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -36,10 +36,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView textView = new TextView(this);
         textView.setTextSize(40);
         textView.setText(message);
-
-        RelativeLayout layout = (RelativeLayout) findViewById(R.id.content);
+        RelativeLayout layout = (RelativeLayout) findViewById(R.id.archives_content);
         layout.addView(textView);
-
 
     }
 

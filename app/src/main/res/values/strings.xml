@@ -6,4 +6,7 @@
     <string name="menu_exercises">Start Exercises</string>
     <string name="menu_archives">History</string>
     <string name="title_activity_display_message">My Message</string>
+    <string name="under_construction">This page is under construction!</string>
+    <string name="title_activity_start_exercises">StartExercisesActivity</string>
+    <string name="title_activity_open_archives">OpenArchivesActivity</string>
 </resources>
